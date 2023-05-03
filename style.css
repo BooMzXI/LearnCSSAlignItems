@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #00D1CB, #0269a4);
+}
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    margin: 10px 0 10px 20px;
+    text-shadow: 2px 2px white;
+    font-size: 20px;
+}
+.box {
+    margin: 0 20px 20px 20px;
+    border: 2px solid black;
+    background-color: white;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+.miniBox {
+    width: 50px;
+    height: auto;
+    padding: 20px;
+    background-color: coral;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.miniBox-hover {
+    animation: mymove 1s ease;
+}
+@keyframes mymove {
+    50% {
+        transform: rotate(50deg);
+    }
+    100% {
+        transform: rotate(-50deg);
+    }
+}
+.Btn{
+    height: 50px;
+    width: 500px;
+    font-size: 20px;
+    margin: 10px 0;
+    transition: all 0.4s ease;
+    border: 2px solid black;
+    background: linear-gradient(to right, #4B8CBD, #01BDB8);
+    outline: none;
+    border-radius: 10px;
+}
+.Btn:hover {
+    background-color: #00D1CB;
+}
+
+@media (max-width: 1180px) {
+    header {
+        font-size: 20px;
+    }
+    .box {
+        width: 600px;
+        height: 300px;
+    }
+    .miniBox {
+        width: 30px;
+        height: 30px;
+    }
+    .Btn {
+        width: 400px;
+    }
+}
+@media (max-width: 450px) {
+    header {
+        font-size: 10px;
+    }
+    .box {
+        width: 250px;
+        height: 300px;
+    }
+    .miniBox {
+        width: 30px;
+        height: 30px;
+    }
+    .Btn {
+        width: 300px;
+    }
+}
